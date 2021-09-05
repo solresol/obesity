@@ -1,0 +1,6 @@
+SELECT ?lga ?elevation_above_sea_level ?Australian_Statistical_Geography_2016_ID ?lgaLabel WHERE {
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+  
+  OPTIONAL { ?lga wdt:P2044 ?elevation_above_sea_level. }
+  ?lga wdt:P4093 ?Australian_Statistical_Geography_2016_ID. 
+}
